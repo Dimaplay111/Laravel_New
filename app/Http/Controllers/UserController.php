@@ -86,7 +86,7 @@ class UserController extends Controller
     //Задание 2
     public function practic5z2()
     {
-        $perem = 'black';
-        return view('pr5.practic5z2', 'perem');
+        $perem = 'color:Red';
+        return view('pr5.practic5z2', ['perem'=>$perem]);
     }
 }

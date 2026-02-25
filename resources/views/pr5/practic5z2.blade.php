@@ -6,7 +6,7 @@
 </head>
 
 <body>
-    <p class="{{perem}}">Гачимен</p>
+    <p style="{{$perem}}">Гачимен</p>
 </body>
 
 </html>

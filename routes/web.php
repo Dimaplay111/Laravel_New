@@ -139,8 +139,6 @@ Route::get('/user25', [UserController::class, 'show']);
 //Задание 7,8,9(10,11)
 Route::get('/user26', [UserController::class, 'method3']);
 
-
-
 //Практика 5. Задание 1
 Route::get('/user27', [UserController::class, 'control']);
 //Задание 2
