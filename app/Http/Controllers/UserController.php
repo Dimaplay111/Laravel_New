@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use function Illuminate\Support\days;
 
 class UserController extends Controller
 {
@@ -89,4 +90,51 @@ class UserController extends Controller
         $perem = 'color:Red';
         return view('pr5.practic5z2', ['perem'=>$perem]);
     }
+    //Задание 3
+    public function practic5z3()
+    {
+        $perem1 = 'color:Red';
+        $perem2 = 'color:Yellow';
+        $perem3 = 'color:Green';
+        return view('pr5.practic5z3',['perem1'=>$perem1,'perem2'=>$perem2,'perem3'=>$perem3]);
+    }
+    //Задание 4
+    public function practic5z4()
+    {
+        $style = 'color:Red';
+        return view('pr5.practic5z4',['style'=>$style]);
+    }
+    //Задание 5,6
+    public function practic5z5()
+    {
+        $text = 'Za Warudo!';
+        $href = 'http://google.com';
+        return view('pr5.practic5z5',['text'=>$text,'href'=>$href]);
+    }
+    public function practic5z7()
+    {
+        return view(
+            'pr5.practic5z7',
+            ['users' => [
+                                    [
+                                        "name"=>"Дмитрий",
+                                        'age'=>'20',
+                                        'salary'=>'1000$'
+                                    ],
+                                    [
+                                        "name"=>"Актан",
+                                        'age'=>'19',
+                                        'salary'=>'950$'
+                                    ],
+                                    [
+                                        "name"=>"Алекс",
+                                        'age'=>'21',
+                                        'salary'=>'1050$'
+                                    ]
+                                    
+            ]
+            ]
+        );
+    }
+
 }

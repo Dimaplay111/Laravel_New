@@ -6,7 +6,8 @@
 </head>
 
 <body>
-    <p style="{{$perem}}">Genius</p>
+    <p><a href="{{$href}}">{{$text}}</a></p>
+    <p>{{date('d.m.Y')}}</p>
 </body>
 
 </html>

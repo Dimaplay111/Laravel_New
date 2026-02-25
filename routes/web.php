@@ -139,7 +139,17 @@ Route::get('/user25', [UserController::class, 'show']);
 //Задание 7,8,9(10,11)
 Route::get('/user26', [UserController::class, 'method3']);
 
+
+
 //Практика 5. Задание 1
 Route::get('/user27', [UserController::class, 'control']);
 //Задание 2
 Route::get('/user28', [UserController::class, 'practic5z2']);
+//Задание 3
+Route::get('/user29', [UserController::class, 'practic5z3']);
+//Задание 4
+Route::get('/user30', [UserController::class, 'practic5z4']);
+//Задание 5,6
+Route::get('/user31', [UserController::class, 'practic5z5']);
+//Задание 7
+Route::get('/user32', [UserController::class, 'practic5z7']);
