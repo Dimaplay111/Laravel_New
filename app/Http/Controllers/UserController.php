@@ -111,6 +111,7 @@ class UserController extends Controller
         $href = 'http://google.com';
         return view('pr5.practic5z5',['text'=>$text,'href'=>$href]);
     }
+    //Задание 7
     public function practic5z7()
     {
         return view(
@@ -135,6 +136,25 @@ class UserController extends Controller
             ]
             ]
         );
+    }
+    //Задание 8
+    public function practic5z8()
+    {
+        return view('pr5.practic5z8',['array'=>[0,1,2,3,4,5]]);
+    }
+    //Задание 9
+    public function practic5z9($city='Москва')
+    {
+        return view('pr5.practic5z9', ['city'=>$city]);
+    }
+    //Задание 10
+    public function practic5z10($city = null, $country = null)
+    {
+    $location = [
+        'country' => $country ?? 'Россия',
+        'city'    => $city ?? 'Москва',
+    ];
+    return view('pr5.practic5z10', ['location' => $location]);
     }
 
 }

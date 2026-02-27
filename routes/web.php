@@ -153,3 +153,10 @@ Route::get('/user30', [UserController::class, 'practic5z4']);
 Route::get('/user31', [UserController::class, 'practic5z5']);
 //Задание 7
 Route::get('/user32', [UserController::class, 'practic5z7']);
+//Задание 8
+Route::get('/user33', [UserController::class, 'practic5z8']);
+//Задание 9
+Route::get('/user34/{city?}', [UserController::class, 'practic5z9']);
+//Задание 10
+Route::get('/user35/{city}/{country}', [UserController::class, 'practic5z10']);
+
