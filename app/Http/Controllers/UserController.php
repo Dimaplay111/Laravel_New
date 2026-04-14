@@ -147,14 +147,142 @@ class UserController extends Controller
     {
         return view('pr5.practic5z9', ['city'=>$city]);
     }
-    //Задание 10
-    public function practic5z10($city = null, $country = null)
+    //Задание 10 
+    public function practic5z10($city = 'Москва', $country = 'Россия')
     {
     $location = [
-        'country' => $country ?? 'Россия',
-        'city'    => $city ?? 'Москва',
+        'country' => $country??'Россия',
+        'city'    => $city??'Москва'
     ];
     return view('pr5.practic5z10', ['location' => $location]);
     }
+    //Задание 11
+    public function practic5z11($year = null, $month = null, $day = null)
+    {
+        $day = $day ?? date('d');
+        $year = $year ?? date('Y');
+        $month = $month ?? date('m');
 
+    return view('pr5.practic5z11', ['year' => $year, 'month' => $month, 'day' => $day]);
+    }
+    //Задание 12,13
+    public function practic5z12()
+    {
+        $str = '<b>Peremennaya 123456</b>';
+        return view('pr5.practic5z12',['str' => $str] );
+    }
+    //Задание 14,15,16
+    public function practic5z14($age)
+    {
+        return view('pr5.practic5z14',['age' => $age] );
+    }
+    //Задание 17
+    public function practic5z17($age)
+    {
+        return view('pr5.practic5z17',['age' => $age] );
+    }
+    //Задание 18
+    public function practic5z18()
+    {
+        return view('pr5.practic5z18',['array'=>[1,1,2]]);
+    }
+    //Задание 19,20,21
+    public function practic5z19()
+    {
+        return view('pr5.practic5z19',['array'=>[9]]);
+    }
+    //Задание 22,23
+    public function practic5z22()
+    {
+        $array = [
+            '1'=>'shard',
+            '2'=>'aganim',
+            '3'=>'ma'
+        ];
+        return view('pr5.practic5z22',['array'=>$array]);
+    }
+    //Задание 24
+    public function practic5z24()
+    {
+        return view('pr5.practic5z24',['array'=>[1,2,4,5,8,11,42]]);
+    }
+    //Задание 25
+    public function practic5z25()
+    {
+        $data = 18;
+
+        return view('pr5.practic5z25',['data'=>$data]);
+    }
+    //Задание 26
+    public function practic5z26()
+    {
+        $array = [
+        [1, 2, 3],
+        [4, 5, 6],
+        [7, 8, 9]
+    ];
+        return view('pr5.practic5z26',['array'=>$array]);
+    }
+    //Задание 27,28
+    public function practic5z27()
+    {
+        $employees = [
+		[
+			'name' => 'user1',
+			'surname' => 'surname1',
+			'salary' => 1000,
+		],
+		[
+			'name' => 'user2',
+			'surname' => 'surname2',
+			'salary' => 2000,
+		],
+		[
+			'name' => 'user3',
+			'surname' => 'surname3',
+			'salary' => 3000,
+		],
+	];
+        return view('pr5.practic5z27',['employees'=>$employees]);
+    }
+    //Задание 29
+    public function practic5z29()
+    {
+        $array = [
+            'name' => 'Дмитрий',
+            'name1' => 'Александр',
+            'name2' => 'Актан',
+            'name3' => 'Полина'
+        ];
+        return view('pr5.practic5z29',['array'=>$array]);
+    }
+    //Задание 30,31,32
+    public function practic5z30()
+    {
+        $array = ['Дмитрий','Александр','Актан','Полина'];
+        return view('pr5.practic5z30',['array'=>$array]);
+    }
+    //Задание 33
+    public function practic5z33()
+    {
+        $array = [1,2,3,4,5,6,7,8,9];
+        return view('pr5.practic5z33',['array'=>$array]);
+    }
+    //Задание 34
+    public function practic5z34()
+    {
+        $array = [1,15,10,7,0,14,22,45];
+        return view('pr5.practic5z34',['array'=>$array]);
+    }
+    //Задание 35
+    public function practic5z35()
+    {
+        $array = [1,15,0,10,7,0,14,22,0,45];
+        return view('pr5.practic5z35',['array'=>$array]);
+    }
+    //Задание 36
+    public function practic5z36()
+    {
+        return view('pr5.practic5z36',[]);
+    }
 }

@@ -6,8 +6,9 @@
 </head>
 
 <body>
-    <p>{{ $location['country'] }}</p>
-<p>{{ $location['city'] }}</p>
+    
+    <p>{{ $location['country'] ?? 'Россия'}}</p>
+<p>{{ $location['city'] ?? 'Москва'}}</p>
 </body>
 
 </html>
