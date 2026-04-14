@@ -226,3 +226,9 @@ Route::get('/user65', action: [CollectionController::class, 'filter']);
 Route::get('/user66', action: [CollectionController::class, 'flatten']);
 //Flip. Меняет местами ключи коллекции на их соответстующие значения
 Route::get('/user67', action: [CollectionController::class, 'flip']);
+//Forget. Удаляет элемент из коллекции по его ключу
+Route::get('/user68', action: [CollectionController::class, 'forget']);
+//Get. Возвращает элемент по указанному ключу
+Route::get('/user69', action: [CollectionController::class, 'get']);
+//Implode. Объединяет элементы коллекции
+Route::get('/user70', action: [CollectionController::class, 'implode']);

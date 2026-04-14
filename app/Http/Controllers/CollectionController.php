@@ -128,4 +128,26 @@ class CollectionController extends Controller
         $flipped->all();
         return $flipped;
     }
+    public function forget()
+    {
+        $collection = collect(['name' => 'taylor', 'framework' => 'laravel']);
+        $collection->forget('name');
+        $collection->all();
+        return $collection;
+    }
+    public function get()
+    {
+        $collection = collect(['name' => 'taylor', 'framework' => 'laravel']);
+        $value = $collection->get('framework');
+        return $value;
+    }
+    public function implode()
+    {
+        $collection = collect([
+            ['account_id' => 1, 'product' => 'Desk'],
+            ['account_id' => 2, 'product' => 'Chair'],
+        ]);
+        $collection->implode('product', ', ');
+        return $collection->implode('product', ', ');
+    }
 }
