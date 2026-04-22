@@ -232,3 +232,31 @@ Route::get('/user68', action: [CollectionController::class, 'forget']);
 Route::get('/user69', action: [CollectionController::class, 'get']);
 //Implode. Объединяет элементы коллекции
 Route::get('/user70', action: [CollectionController::class, 'implode']);
+//Intersect. Удаляет любые значения из исходной коллекции, которых нет в указанном массиве или коллекции
+Route::get('/user71', action: [CollectionController::class, 'intersect']);
+//KeyBy. Возвращает коллекцию, элементы которой будут образованы путем присвоения ключей элементам базовой коллекции
+Route::get('/user72', action: [CollectionController::class, 'keyby']);
+//Keys. Возвращает все ключи коллекции
+Route::get('/user73', action: [CollectionController::class, 'keys']);
+//Map. Выполняет итерацию по коллекции и передает каждое значение указанному замыканию
+Route::get('/user74', action: [CollectionController::class, 'map']);
+//Max. Возвращает максимальное значение переданного ключа
+Route::get('/user75', action: [CollectionController::class, 'max']);
+//Median. Возваращает медиану переданного ключа
+Route::get('/user76', action: [CollectionController::class, 'median']);
+//Merge. Объединяет переданный массив или коллекцию с исходной коллекцией
+Route::get('/user77', action: [CollectionController::class, 'merge']);
+//Min. Возвращает минимальное значение переданного ключа
+Route::get('/user78', action: [CollectionController::class, 'min']);
+//Mode. Возвращает значение моды(продублированные числа) указанного ключа
+Route::get('/user79', action: [CollectionController::class, 'mode']);
+//Nth. Создает новую коллекцию, состоящую из каждого n-го элемента
+Route::get('/user80', action: [CollectionController::class, 'nth']);
+//Pipe. Передает коллекцию указанному замыканию и возвращает результат выполненного замыкания
+Route::get('/user81', action: [CollectionController::class, 'pipe']);
+//Pluck. Извлекает все значения для указанного ключа
+Route::get('/user82', action: [CollectionController::class, 'pluck']);
+//Pop. Удаляет и возвращает последний элемент из коллекции
+Route::get('/user83', action: [CollectionController::class, 'pop']);
+
+//Практика 7. Введение в миграции
