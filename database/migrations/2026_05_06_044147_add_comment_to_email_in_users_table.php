@@ -4,6 +4,8 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
+//Задание 7
+
 return new class extends Migration
 {
     /**
@@ -11,14 +13,9 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('user', function (Blueprint $table) {
-        $table->id();
-        $table->string('name');
-        $table->string('password');
-        $table->integer('age');
-        $table->string('email');
-        $table->integer('salary');
-    });
+        Schema::table('user', function (Blueprint $table) {
+            $table->string('email')->comment('Используется для авторизации')->change();
+        });
     }
 
     /**
@@ -26,6 +23,8 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::dropIfExists('user');
+        Schema::table('users', function (Blueprint $table) {
+            $table->string('email')->comment(null)->change();
+        });
     }
 };

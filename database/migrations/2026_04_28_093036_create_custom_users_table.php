@@ -4,6 +4,8 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
+//Задание 5
+
 return new class extends Migration
 {
     /**
@@ -15,10 +17,10 @@ return new class extends Migration
 
     Schema::create('users', function (Blueprint $table) {
         $table->id();
-        $table->string('first_name');    // Имя
-        $table->string('last_name');     // Фамилия
-        $table->date('birthday');        // Дата рождения
-        $table->timestamps();            // Поле created_at (дата создания)
+        $table->string('first_name');
+        $table->string('last_name');
+        $table->date('birthday');
+        $table->timestamps();
     });
     }
 
