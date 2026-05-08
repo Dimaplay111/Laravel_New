@@ -5,6 +5,8 @@ namespace Database\Seeders;
 use App\Models\User;
 use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
+use Illuminate\Support\Facades\DB;
+use Illuminate\Support\Str;
 
 class DatabaseSeeder extends Seeder
 {
@@ -17,9 +19,19 @@ class DatabaseSeeder extends Seeder
     {
         // User::factory(10)->create();
 
-        User::factory()->create([
-            'name' => 'Test User',
-            'email' => 'test@example.com',
+        DB::table('posts')->insert([
+        'name'  => 'Author Name',
+        'title' => 'title 1',
+        'slug'  => 'title-1', 
+        'email' => 'mail@example.ru',
+        'text'  => 'text text text 1',
         ]);
+
+        DB::table('dima')->insert([
+            'title'=>Str::random(10),
+            'slug'=>Str::random(10),
+            'text'=>Str::random(50),
+        ]);
+
     }
 }
