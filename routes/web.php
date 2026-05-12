@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\CollectionController;
+use App\Http\Controllers\PostsControllerPr8;
 use App\Http\Controllers\UserController;
 use Illuminate\Support\Facades\Route;
 
@@ -259,4 +260,5 @@ Route::get('/user82', action: [CollectionController::class, 'pluck']);
 //Pop. Удаляет и возвращает последний элемент из коллекции
 Route::get('/user83', action: [CollectionController::class, 'pop']);
 
-//Практика 7. Введение в миграции
+//приктака9запро
+Route::get('/user100',action: [PostsControllerPr8::class, 'show']);

@@ -17,8 +17,8 @@ return new class extends Migration
         $table->string('email');
         $table->integer('age');
         $table->integer('salary');
-        $table->dateTime('created-at');
-        $table->dateTime('updated-at');
+        $table->datetime('created-at');
+        $table->datetime('updated-at');
         $table->timestamps();
     });
     }
