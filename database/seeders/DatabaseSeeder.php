@@ -33,5 +33,22 @@ class DatabaseSeeder extends Seeder
             'text'=>Str::random(50),
         ]);
 
+        DB::table('postspr8')->insert([
+            'title' => 'Олехандро',
+            'slug' => 'title-13',
+            'likes' => '9909',
+            'created-at' => '26.05.15',
+            'updated-at' => '26.05.15',
+        ]);
+
+        DB::table('userspr8')->insert([
+            'name' => 'Евлампий',
+            'email' => 'evlampiy67@mail.ru',
+            'age' => '67',
+            'salary' => '5000',
+            'created-at' => '26.05.15',
+            'updated-at' => '26.05.15',
+        ]);
+
     }
 }

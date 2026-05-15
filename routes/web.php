@@ -261,4 +261,4 @@ Route::get('/user82', action: [CollectionController::class, 'pluck']);
 Route::get('/user83', action: [CollectionController::class, 'pop']);
 
 //приктака9запро
-Route::get('/user100',action: [PostsControllerPr8::class, 'show']);
+Route::get('/user100',action: [PostsControllerPr8::class, 'ageot20do30']);

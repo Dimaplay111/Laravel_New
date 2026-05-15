@@ -1,10 +1,16 @@
-<x-layout>
+
+<table border="1">
 	@foreach ($posts as $post)
-		<div>
-			<h2>{{ $post->title }}</h2>
-			<div>
-				{{ $post->text }}
-			</div>
-		</div>
+			<thead>
+				<td>{{ $post->title }}</td>
+			</thead>
+			<tbody>
+			<td>
+				{{ $post->slug }}
+				<td>{{ $post->likes }}</td>
+			</td>
+			<p>{{ $post->created_at }}</p>
+			<p>{{ $post->updated_at }}</p>
+			</tbody>
 	@endforeach
-</x-layout>
+</table>
